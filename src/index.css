@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+
+.main_bg::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  left: 0; /* Giving minus -25px left position */
+  right: 0;
+  top: 0; /* Giving minus -25px top position */
+  bottom: 0;
+  /* box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3); */
+  filter: blur(2px);
+  
+}
+/* .navIcon:hover
+{
+   position: relative;
+
+  filter: blur(64px);
+ 
+} */
+.btn {
+box-shadow: inset 0px 0px 0px #2858f7;
+transition: ease-out  3s !important;
+}
+
+.btn:hover {
+box-shadow: inset 200px 0px 0px #2858f7;
+}
+
+
+@tailwind utilities;
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
