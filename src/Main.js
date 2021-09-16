@@ -37,7 +37,7 @@ function reducer(state, action) {
 
 export default function Main() {
 
-  // let location = useLocation();
+  
   const [state, dispatch] = useReducer(reducer, initialState);
   
 

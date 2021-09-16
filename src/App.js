@@ -196,7 +196,7 @@ return axios.get("/IPlayerService/GetOwnedGames/v0001/?key=440918E5D72ACC396831C
         {
           games.map((game,index) => {
 
-          //  return <Cards   game={game} />
+        
            return <Cards state={state} dispatch={dispatch}  game={game} key={index} />
 
           })
